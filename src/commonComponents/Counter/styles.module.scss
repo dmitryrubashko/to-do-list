@@ -1,0 +1,108 @@
+.wrapper {
+  font-family: sans-serif;
+  background: #33889d;
+  margin: 0 auto;
+  width: 400px;
+  padding: 25px;
+  border: 4px solid #164f2b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.display {
+  font-size: 40px;
+  font-family: sans-serif;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: rgba(61, 143, 143, 0.66);
+  color: #282c34;
+  margin-bottom: 25px;
+  border: 4px solid #164f2b;
+}
+
+.propertiesDisplay {
+  font-size: 40px;
+  font-family: sans-serif;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: rgba(61, 143, 143, 0.66);
+  color: #282c34;
+  margin-bottom: 25px;
+  border: 4px solid #164f2b;
+}
+
+.description {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  color: #be6545;
+}
+
+.contolButtons {
+  display: flex;
+}
+
+.controlButton {
+  color: #282c34;
+  font-size: 100px;
+  background: rgba(61, 143, 143, 0.66);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 4px solid #164f2b;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.controlButtonLeft {
+  color: #282c34;
+  font-size: 100px;
+  background: rgba(61, 143, 143, 0.66);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 4px solid #164f2b;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding-bottom: 17px;
+}
+
+.resetButton {
+  color: #282c34;
+  background-color: rgba(61, 143, 143, 0.66);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 4px solid #164f2b;
+  font-size: 25px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.button {
+  font-family: sans-serif;
+  border-radius: 15px;
+  background: rgba(81, 107, 189, 0.83);
+  font-size: 15px;
+  color: #164f2b;
+  width: 200px;
+  height: 50px;
+  border: 4px #164f2b solid;
+  margin: 10px;
+}
+
