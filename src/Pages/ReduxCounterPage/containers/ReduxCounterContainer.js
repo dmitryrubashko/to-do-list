@@ -8,6 +8,7 @@ const ReduxCounterContainer = () => {
   const dispatch = useDispatch();
   const {counters} = useSelector((store) => store.countersPage )
 
+
   const handleCounterCreate = useCallback(() => {
     dispatch(CREATE_COUNTER())
   }, [dispatch])
