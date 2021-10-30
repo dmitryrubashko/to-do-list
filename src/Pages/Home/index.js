@@ -26,6 +26,10 @@ const homePage = () => {
       <Link to={ROUTES.FORM}>
         <button className={styles.button}>Form</button>
       </Link>
+
+      <Link to={ROUTES.TODOLIST}>
+        <button className={styles.button}>To Do List</button>
+      </Link>
     </div>
       <h1>Home Page</h1>
     </>

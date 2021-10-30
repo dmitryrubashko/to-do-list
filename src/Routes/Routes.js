@@ -8,6 +8,7 @@ import CountersManagerContainer from "../Pages/CountersManager/Containers/Counte
 import FormPageContainer from "../Pages/FormPage/Container/FormPageContainer";
 
 import {ROUTES} from "./routeNames";
+import ReduxToDoListContainer from "../Pages/ReduxListToDo/containers/ReduxToDoListContainer";
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
       <Route path={ROUTES.COUNTERS_MANAGER} component={CountersManagerContainer}/>
       <Route path={ROUTES.REDUX_COUNTER} component={ReduxCounterContainer}/>
       <Route path={ROUTES.FORM} component={FormPageContainer}/>
+      <Route path={ROUTES.TODOLIST} component={ReduxToDoListContainer}/>
       <Redirect path='*' to={ROUTES.HOME}/>
     </Switch>
   );

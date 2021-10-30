@@ -6,4 +6,5 @@ export const ROUTES = {
   COUNTERS_MANAGER: '/counters-manager',
   REDUX_COUNTER: '/redux-counter',
   FORM: '/form',
+  TODOLIST: '/to-do-list',
 }
