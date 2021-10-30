@@ -15,6 +15,12 @@ const toDoListReducer = handleActions({
         lists: stateCopy
       };
     },
+
+    [actions.REMOVE_TASK]: (state) => {
+      console.log(123)
+      return state
+    }
+
   },
   defaultState
 )

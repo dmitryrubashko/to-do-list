@@ -1,14 +1,13 @@
 import {Button} from "@mui/material";
 import ToDoTask from "../../../../commonComponents/ToDoTask";
 import {ROUTES} from "../../../../Routes/routeNames";
-import styles from "../../../FunctionalCounter/Components/Layout/styles.module.scss";
 import {Link} from "react-router-dom";
 
-const ReduxToDoListLayout = ({handleCreateNewTask, lists}) => {
+const ReduxToDoListLayout = ({handleCreateNewTask, lists, handleRemoveTask}) => {
   return (
     <div>
       <Link to={ROUTES.HOME}>
-        <button className={styles.button}>Home Page</button>
+        <Button variant={'outlined'} >Home Page</Button>
       </Link>
       <Button variant={'outlined'} onClick={handleCreateNewTask}>Create New Task</Button>
       <div>
@@ -16,6 +15,7 @@ const ReduxToDoListLayout = ({handleCreateNewTask, lists}) => {
           <ToDoTask
             key={id}
             handleCreateNewTask={handleCreateNewTask}
+            handleRemoveTask={handleRemoveTask}
             id={id}
           />
         ))}
