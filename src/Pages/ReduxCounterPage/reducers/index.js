@@ -7,14 +7,14 @@ const defaultState = {
 }
 
 const countersPageReducer = handleActions({
-  [actions.CREATE_COUNTER]: (state) => {
-    const stateCopy = [...state.counters];
-    stateCopy.push({id: uuidV4() ,countValue: 0})
+    [actions.CREATE_COUNTER]: (state) => {
+      const stateCopy = [...state.counters];
+      stateCopy.push({id: uuidV4() ,countValue: 0})
 
-    return {
-      counters: stateCopy
-    };
-  },
+      return {
+        counters: stateCopy
+      };
+    },
 
   [actions.INCREASE_COUNTER]: (state, action) => {
     const counterId = action.payload;
