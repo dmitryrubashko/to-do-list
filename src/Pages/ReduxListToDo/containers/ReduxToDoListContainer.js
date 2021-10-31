@@ -6,15 +6,15 @@ import {useCallback} from "react";
 const ReduxToDoListContainer = () => {
 
   const dispatch = useDispatch();
-  const {lists} = useSelector((store) => store.listsPage )
+  const {lists} = useSelector((store) => store.listsPage)
 
   const handleCreateNewTask = useCallback(() => {
     dispatch(CREATE_NEWTASK())
   }, [dispatch])
 
-  const handleRemoveTask = useCallback(() => {
-    dispatch(REMOVE_TASK())
-  }, []) //??????????????????
+  const handleRemoveTask = useCallback((id) => {
+    dispatch(REMOVE_TASK(id))
+  }, [])
 
   return (
     <ReduxToDoListLayout

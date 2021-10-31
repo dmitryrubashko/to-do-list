@@ -15,7 +15,7 @@ const ReduxToDoListLayout = ({handleCreateNewTask, lists, handleRemoveTask}) => 
           <ToDoTask
             key={id}
             handleCreateNewTask={handleCreateNewTask}
-            handleRemoveTask={handleRemoveTask}
+            handleRemoveTask={() => handleRemoveTask(id)}
             id={id}
           />
         ))}
