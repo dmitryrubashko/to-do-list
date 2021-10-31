@@ -18,7 +18,6 @@ const toDoListReducer = handleActions({
 
     [actions.REMOVE_TASK]: (state, action) => {
       const listId = action.payload;
-      console.log(listId)
       const updatedLists = [...state.lists];
       updatedLists.splice(listId, 1);
       return {
