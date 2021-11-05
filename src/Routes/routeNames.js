@@ -8,4 +8,6 @@ export const ROUTES = {
   FORM: '/form',
   TODOLIST: '/to-do-list',
   TODO_LIST: '/todo-list',
+  POKEMONS_PAGE: '/pokemon',
+  POKEMONS_DETAILS: '/pokemon/:name',
 }
