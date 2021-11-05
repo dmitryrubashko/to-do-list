@@ -7,4 +7,5 @@ export const ROUTES = {
   REDUX_COUNTER: '/redux-counter',
   FORM: '/form',
   TODOLIST: '/to-do-list',
+  TODO_LIST: '/todo-list',
 }

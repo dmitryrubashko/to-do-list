@@ -9,6 +9,7 @@ import FormPageContainer from "../Pages/FormPage/Container/FormPageContainer";
 
 import {ROUTES} from "./routeNames";
 import ReduxToDoListContainer from "../Pages/ReduxListToDo/containers/ReduxToDoListContainer";
+import TodoListPageContainer from "../Pages/TodoListPage/containers/TodoListPageContainer";
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
       <Route path={ROUTES.REDUX_COUNTER} component={ReduxCounterContainer}/>
       <Route path={ROUTES.FORM} component={FormPageContainer}/>
       <Route path={ROUTES.TODOLIST} component={ReduxToDoListContainer}/>
+      <Route path={ROUTES.TODO_LIST} component={TodoListPageContainer}/>
       <Redirect path='*' to={ROUTES.HOME}/>
     </Switch>
   );

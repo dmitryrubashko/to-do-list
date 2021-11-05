@@ -1,17 +1,22 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 import UsersPageLayout from "../Components/Layout";
-import {users as userList} from "../mock";
+import axios from 'axios';
+import {useFetching} from "../../../Hooks";
+
+const getPokemons = () => axios.get('https://pokeapi.co/api/v2/pokemon')
 
 const UsersPageContainer = () => {
-  const [users, setUsers] = useState(userList);
+  const {responseData, error, isLoading, handleDataLoad} = useFetching(getPokemons);
 
-  const handleRemove = useCallback((itemIndex) => {
-    const usersCopy = [...users];
+  useEffect(() => {
+    handleDataLoad()
+  },[])
 
-    usersCopy.splice(itemIndex, 1);
-    setUsers(usersCopy)
-  }, [users])
-  return <UsersPageLayout userList={users} handleRemove={handleRemove}/>
+  return <UsersPageLayout
+    userList={responseData?.results}
+    title ='Requests'
+    isLoading={isLoading}
+  />
 };
 
 export default UsersPageContainer;

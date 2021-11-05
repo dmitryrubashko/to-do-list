@@ -7,6 +7,7 @@ const UserCard = ({name, age, city, handleRemove}) => {
       <h1>Name: {name}</h1>
       <h2>Age: {age}</h2>
       <h3>City: {city}</h3>
+
       <button onClick={handleRemove}>DELETE</button>
     </div>
 

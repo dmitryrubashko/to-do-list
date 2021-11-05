@@ -1,26 +1,20 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import UserCard from "../../../../Components/UserCard";
+import {CircularProgress} from '@mui/material'
 
-const UsersPageLayout = ({userList, title, handleRemove}) => {
+
+const UsersPageLayout = ({isLoading, userList, title, handleRemove}) => {
 
   return <div>
     <h1>{title}</h1>
+    {isLoading ? <CircularProgress/> :
+      <div>
+        {userList?.map(pokemon => (
+          <UserCard name={pokemon.name} id={pokemon.id}/>
+        ))}
+      </div>}
 
-    <div>
-      {userList.map((user, index) =>
-        (
-          <UserCard
-            key={index}
-            name={user.name}
-            age={user.age}
-            city={user.city}
-            handleRemove={() => handleRemove(index)}
-          />
-
-        )
-      )}
-    </div>
   </div>;
 };
 

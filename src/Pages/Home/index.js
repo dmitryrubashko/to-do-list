@@ -28,7 +28,11 @@ const homePage = () => {
       </Link>
 
       <Link to={ROUTES.TODOLIST}>
-        <button className={styles.button}>To Do List</button>
+        <button className={styles.button}>To Do List (SHIT)</button>
+      </Link>
+
+      <Link to={ROUTES.TODO_LIST}>
+        <button className={styles.button}>To Do List (GOOD)</button>
       </Link>
     </div>
       <h1>Home Page</h1>
